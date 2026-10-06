@@ -13,7 +13,10 @@ export default function RootLayout() {
         name="details"
         options={{
           title:"Details",
-          headerBackButtonDisplayMode:"minimal"
+          headerBackButtonDisplayMode:"minimal",
+          presentation:'modal'
+          // presentation:'formSheet',
+          // sheetAllowedDetents:[0.5]
         }}
         />
   </Stack>

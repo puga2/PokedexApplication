@@ -1,10 +1,23 @@
-import { useEffect, useState } from "react";
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
+import { ScrollView, StyleSheet } from "react-native";
 
 export default function Details() {
     const params = useLocalSearchParams();
-    console.log(params);
+    console.log(params.name);
+
+    useEffect(()=>{
+
+    },[])
+    // async function fetchPokemonDetails(name:string){
+    //   try{
+    //   // const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=10");
+    //   // const data = await response.json();
+    //   // console.log(data);
+    //   //  console.log(JSON.stringify(pokemons[0], null, 2));
+    //   }catch(error){
+    //     console.error(error);
+    // }
   return (
 <ScrollView contentContainerStyle={{
   gap:16,
